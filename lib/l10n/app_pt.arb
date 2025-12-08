@@ -1,0 +1,70 @@
+{
+  "@@locale": "pt",
+  "appTitle": "Target App",
+  "loginTitle": "Login",
+  "username": "Usuário",
+  "password": "Senha",
+  "login": "Entrar",
+  "developmentFeature": "Funcionalidade em desenvolvimento",
+  "testCredentials": "Para testar, use:",
+  "logout": "Sair",
+  "lightMode": "Modo Claro",
+  "darkMode": "Modo Escuro",
+  "loginSuccess": "Login realizado com sucesso!",
+  "welcomeMessage": "Bem-vindo ao aplicativo",
+  "invalidUsername": "Usuário deve ter no mínimo {min} caracteres",
+  "@invalidUsername": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "invalidPassword": "Senha deve ter no mínimo {min} caracteres",
+  "@invalidPassword": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "fillFieldsCorrectly": "Por favor, preencha os campos corretamente",
+  "logoutError": "Erro ao fazer logout",
+  "invalidCredentials": "Usuário ou senha inválidos",
+  "register": "Cadastro",
+  "name": "Nome",
+  "confirmPassword": "Confirmar Senha",
+  "createAccount": "Criar Conta",
+  "alreadyHaveAccount": "Já tem uma conta?",
+  "dontHaveAccount": "Não tem uma conta?",
+  "registerNow": "Cadastre-se",
+  "invalidName": "Nome deve ter no mínimo {min} caracteres",
+  "@invalidName": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "passwordsDoNotMatch": "As senhas não coincidem",
+  "registerSuccess": "Cadastro realizado com sucesso!",
+  "userAlreadyExists": "Usuário já existe",
+  "storageError": "Erro ao acessar armazenamento",
+  "unknownError": "Erro desconhecido. Tente novamente",
+  "weakPassword": "Senha fraca. Use maiúsculas, minúsculas, números e caracteres especiais",
+  "strongPassword": "Senha forte",
+  "passwordStrength": "Força da senha",
+  "passwordRequirements": "Requisitos da senha:",
+  "requirementUppercase": "Pelo menos uma letra maiúscula",
+  "requirementLowercase": "Pelo menos uma letra minúscula",
+  "requirementNumber": "Pelo menos um número",
+  "requirementSpecialChar": "Pelo menos um caractere especial (!@#$%^&*)",
+  "requirementMinLength": "Mínimo de {min} caracteres",
+  "@requirementMinLength": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  }
+}

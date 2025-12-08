@@ -1,0 +1,70 @@
+{
+  "@@locale": "en",
+  "appTitle": "Target App",
+  "loginTitle": "Login",
+  "username": "Username",
+  "password": "Password",
+  "login": "Login",
+  "developmentFeature": "Feature under development",
+  "testCredentials": "To test, use:",
+  "logout": "Logout",
+  "lightMode": "Light Mode",
+  "darkMode": "Dark Mode",
+  "loginSuccess": "Login successful!",
+  "welcomeMessage": "Welcome to the app",
+  "invalidUsername": "Username must be at least {min} characters",
+  "@invalidUsername": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "invalidPassword": "Password must be at least {min} characters",
+  "@invalidPassword": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "fillFieldsCorrectly": "Please fill in the fields correctly",
+  "logoutError": "Error logging out",
+  "invalidCredentials": "Invalid username or password",
+  "register": "Register",
+  "name": "Name",
+  "confirmPassword": "Confirm Password",
+  "createAccount": "Create Account",
+  "alreadyHaveAccount": "Already have an account?",
+  "dontHaveAccount": "Don't have an account?",
+  "registerNow": "Register now",
+  "invalidName": "Name must be at least {min} characters",
+  "@invalidName": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "passwordsDoNotMatch": "Passwords do not match",
+  "registerSuccess": "Registration successful!",
+  "userAlreadyExists": "User already exists",
+  "storageError": "Error accessing storage",
+  "unknownError": "Unknown error. Please try again",
+  "weakPassword": "Weak password. Use uppercase, lowercase, numbers and special characters",
+  "strongPassword": "Strong password",
+  "passwordStrength": "Password strength",
+  "passwordRequirements": "Password requirements:",
+  "requirementUppercase": "At least one uppercase letter",
+  "requirementLowercase": "At least one lowercase letter",
+  "requirementNumber": "At least one number",
+  "requirementSpecialChar": "At least one special character (!@#$%^&*)",
+  "requirementMinLength": "Minimum {min} characters",
+  "@requirementMinLength": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  }
+}
