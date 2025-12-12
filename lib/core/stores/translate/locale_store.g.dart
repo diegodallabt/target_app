@@ -24,26 +24,55 @@ mixin _$LocaleStore on _LocaleStore, Store {
     });
   }
 
+  late final _$errorMessageAtom =
+      Atom(name: '_LocaleStore.errorMessage', context: context);
+
+  @override
+  String? get errorMessage {
+    _$errorMessageAtom.reportRead();
+    return super.errorMessage;
+  }
+
+  @override
+  set errorMessage(String? value) {
+    _$errorMessageAtom.reportWrite(value, super.errorMessage, () {
+      super.errorMessage = value;
+    });
+  }
+
+  late final _$loadLocaleAsyncAction =
+      AsyncAction('_LocaleStore.loadLocale', context: context);
+
+  @override
+  Future<void> loadLocale(String userId) {
+    return _$loadLocaleAsyncAction.run(() => super.loadLocale(userId));
+  }
+
+  late final _$setLocaleAsyncAction =
+      AsyncAction('_LocaleStore.setLocale', context: context);
+
+  @override
+  Future<void> setLocale(Locale newLocale) {
+    return _$setLocaleAsyncAction.run(() => super.setLocale(newLocale));
+  }
+
+  late final _$toggleLocaleAsyncAction =
+      AsyncAction('_LocaleStore.toggleLocale', context: context);
+
+  @override
+  Future<void> toggleLocale() {
+    return _$toggleLocaleAsyncAction.run(() => super.toggleLocale());
+  }
+
   late final _$_LocaleStoreActionController =
       ActionController(name: '_LocaleStore', context: context);
 
   @override
-  void setLocale(Locale newLocale) {
+  void resetToDefault() {
     final _$actionInfo = _$_LocaleStoreActionController.startAction(
-        name: '_LocaleStore.setLocale');
+        name: '_LocaleStore.resetToDefault');
     try {
-      return super.setLocale(newLocale);
-    } finally {
-      _$_LocaleStoreActionController.endAction(_$actionInfo);
-    }
-  }
-
-  @override
-  void toggleLocale() {
-    final _$actionInfo = _$_LocaleStoreActionController.startAction(
-        name: '_LocaleStore.toggleLocale');
-    try {
-      return super.toggleLocale();
+      return super.resetToDefault();
     } finally {
       _$_LocaleStoreActionController.endAction(_$actionInfo);
     }
@@ -52,7 +81,8 @@ mixin _$LocaleStore on _LocaleStore, Store {
   @override
   String toString() {
     return '''
-locale: ${locale}
+locale: ${locale},
+errorMessage: ${errorMessage}
     ''';
   }
 }

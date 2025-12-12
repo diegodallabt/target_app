@@ -134,4 +134,51 @@ class AppLocalizationsEn extends AppLocalizations {
   String requirementMinLength(int min) {
     return 'Minimum $min characters';
   }
+
+  @override
+  String get noItemsYet => 'No items yet. \nAdd new items to appear here!';
+
+  @override
+  String get newItem => 'New item';
+
+  @override
+  String get add => 'Add';
+
+  @override
+  String get removeItem => 'Remove item';
+
+  @override
+  String removeItemConfirmation(String itemName) {
+    return 'Do you want to remove \"$itemName\"?';
+  }
+
+  @override
+  String get cancel => 'Cancel';
+
+  @override
+  String get remove => 'Remove';
+
+  @override
+  String get itemNameEmpty => 'Item name cannot be empty';
+
+  @override
+  String get edit => 'Edit';
+
+  @override
+  String get delete => 'Delete';
+
+  @override
+  String get editItem => 'Edit item';
+
+  @override
+  String get itemName => 'Item name';
+
+  @override
+  String get itemDescription => 'Description';
+
+  @override
+  String get selectIcon => 'Select icon';
+
+  @override
+  String get save => 'Save';
 }

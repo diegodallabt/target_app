@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:target_app/l10n/app_localizations.dart';
+import '../../../core/stores/theme/theme_store.dart';
 import '../../../core/widgets/custom_text_field.dart';
 import '../../../core/widgets/primary_button.dart';
 import '../../../core/widgets/tab_selector.dart';
@@ -33,6 +34,10 @@ class _LoginScreenState extends State<LoginScreen>
     super.initState();
     _viewModel = Modular.get<LoginViewModel>();
     _localeStore = Modular.get<LocaleStore>();
+
+    final themeStore = Modular.get<ThemeStore>();
+    themeStore.resetToDefault();
+    _localeStore.resetToDefault();
 
     _animationController = AnimationController(
       vsync: this,

@@ -135,6 +135,54 @@ class AppLocalizationsPt extends AppLocalizations {
   String requirementMinLength(int min) {
     return 'Mínimo de $min caracteres';
   }
+
+  @override
+  String get noItemsYet =>
+      'Nenhum item ainda. \nAdicione novos itens para aparecer aqui!';
+
+  @override
+  String get newItem => 'Novo item';
+
+  @override
+  String get add => 'Adicionar';
+
+  @override
+  String get removeItem => 'Remover item';
+
+  @override
+  String removeItemConfirmation(String itemName) {
+    return 'Deseja remover \"$itemName\"?';
+  }
+
+  @override
+  String get cancel => 'Cancelar';
+
+  @override
+  String get remove => 'Remover';
+
+  @override
+  String get itemNameEmpty => 'O nome do item não pode estar vazio';
+
+  @override
+  String get edit => 'Editar';
+
+  @override
+  String get delete => 'Excluir';
+
+  @override
+  String get editItem => 'Editar item';
+
+  @override
+  String get itemName => 'Nome do item';
+
+  @override
+  String get itemDescription => 'Descrição';
+
+  @override
+  String get selectIcon => 'Selecionar ícone';
+
+  @override
+  String get save => 'Guardar';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -268,4 +316,52 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String requirementMinLength(int min) {
     return 'Mínimo de $min caracteres';
   }
+
+  @override
+  String get noItemsYet =>
+      'Nenhum item ainda. \nAdicione novos itens para aparecer aqui!';
+
+  @override
+  String get newItem => 'Novo item';
+
+  @override
+  String get add => 'Adicionar';
+
+  @override
+  String get removeItem => 'Remover item';
+
+  @override
+  String removeItemConfirmation(String itemName) {
+    return 'Deseja remover \"$itemName\"?';
+  }
+
+  @override
+  String get cancel => 'Cancelar';
+
+  @override
+  String get remove => 'Remover';
+
+  @override
+  String get itemNameEmpty => 'O nome do item não pode estar vazio';
+
+  @override
+  String get edit => 'Editar';
+
+  @override
+  String get delete => 'Excluir';
+
+  @override
+  String get editItem => 'Editar item';
+
+  @override
+  String get itemName => 'Nome do item';
+
+  @override
+  String get itemDescription => 'Descrição';
+
+  @override
+  String get selectIcon => 'Selecionar ícone';
+
+  @override
+  String get save => 'Salvar';
 }

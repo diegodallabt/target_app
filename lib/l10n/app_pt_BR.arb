@@ -66,5 +66,27 @@
         "type": "int"
       }
     }
-  }
+  },
+  "noItemsYet": "Nenhum item ainda. \nAdicione novos itens para aparecer aqui!",
+  "newItem": "Novo item",
+  "add": "Adicionar",
+  "removeItem": "Remover item",
+  "removeItemConfirmation": "Deseja remover \"{itemName}\"?",
+  "@removeItemConfirmation": {
+    "placeholders": {
+      "itemName": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "Cancelar",
+  "remove": "Remover",
+  "itemNameEmpty": "O nome do item não pode estar vazio",
+  "edit": "Editar",
+  "delete": "Excluir",
+  "editItem": "Editar item",
+  "itemName": "Nome do item",
+  "itemDescription": "Descrição",
+  "selectIcon": "Selecionar ícone",
+  "save": "Salvar"
 }
