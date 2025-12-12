@@ -141,6 +141,18 @@ class _HomeScreenState extends State<HomeScreen> {
               tooltip: themeStore.isDarkMode ? l10n.lightMode : l10n.darkMode,
             ),
           ),
+            Observer(
+            builder: (_) => IconButton(
+              icon: const Icon(Icons.analytics),
+              onPressed: () {
+                Modular.to.pushNamed('/home/details', arguments: {
+                  'items': viewModel.items,
+                  'gridColumns': _gridColumns,
+                });
+              },
+              tooltip: l10n.statistics,
+            ),
+          ),
           LanguageSelector(localeStore: localeStore),
           IconButton(
             icon: const Icon(Icons.logout),

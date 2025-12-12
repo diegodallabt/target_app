@@ -88,5 +88,17 @@
   "itemName": "Nome do item",
   "itemDescription": "Descrição",
   "selectIcon": "Selecionar ícone",
-  "save": "Guardar"
+  "save": "Guardar",
+  "details": "Detalhes",
+  "statistics": "Estatísticas",
+  "gridColumns": "Colunas no grid",
+  "totalRows": "Total de linhas",
+  "editsPerformed": "Edições realizadas",
+  "totalCharacters": "Total de caracteres",
+  "itemDetails": "Detalhes dos itens",
+  "characters": "caracteres",
+  "letters": "Letras",
+  "numbers": "Números",
+  "noDataToDisplay": "Sem dados para exibir",
+  "characterDistribution": "Distribuição de caracteres"
 }

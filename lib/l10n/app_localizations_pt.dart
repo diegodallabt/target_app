@@ -183,6 +183,42 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get save => 'Guardar';
+
+  @override
+  String get details => 'Detalhes';
+
+  @override
+  String get statistics => 'Estatísticas';
+
+  @override
+  String get gridColumns => 'Colunas no grid';
+
+  @override
+  String get totalRows => 'Total de linhas';
+
+  @override
+  String get editsPerformed => 'Edições realizadas';
+
+  @override
+  String get totalCharacters => 'Total de caracteres';
+
+  @override
+  String get itemDetails => 'Detalhes dos itens';
+
+  @override
+  String get characters => 'caracteres';
+
+  @override
+  String get letters => 'Letras';
+
+  @override
+  String get numbers => 'Números';
+
+  @override
+  String get noDataToDisplay => 'Sem dados para exibir';
+
+  @override
+  String get characterDistribution => 'Distribuição de caracteres';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -363,5 +399,41 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get selectIcon => 'Selecionar ícone';
 
   @override
-  String get save => 'Salvar';
+  String get save => 'Guardar';
+
+  @override
+  String get details => 'Detalhes';
+
+  @override
+  String get statistics => 'Estatísticas';
+
+  @override
+  String get gridColumns => 'Colunas no grid';
+
+  @override
+  String get totalRows => 'Total de linhas';
+
+  @override
+  String get editsPerformed => 'Edições realizadas';
+
+  @override
+  String get totalCharacters => 'Total de caracteres';
+
+  @override
+  String get itemDetails => 'Detalhes dos itens';
+
+  @override
+  String get characters => 'caracteres';
+
+  @override
+  String get letters => 'Letras';
+
+  @override
+  String get numbers => 'Números';
+
+  @override
+  String get noDataToDisplay => 'Sem dados para exibir';
+
+  @override
+  String get characterDistribution => 'Distribuição de caracteres';
 }

@@ -420,8 +420,80 @@ abstract class AppLocalizations {
   /// No description provided for @save.
   ///
   /// In pt_BR, this message translates to:
-  /// **'Salvar'**
+  /// **'Guardar'**
   String get save;
+
+  /// No description provided for @details.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Detalhes'**
+  String get details;
+
+  /// No description provided for @statistics.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Estatísticas'**
+  String get statistics;
+
+  /// No description provided for @gridColumns.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Colunas no grid'**
+  String get gridColumns;
+
+  /// No description provided for @totalRows.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Total de linhas'**
+  String get totalRows;
+
+  /// No description provided for @editsPerformed.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Edições realizadas'**
+  String get editsPerformed;
+
+  /// No description provided for @totalCharacters.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Total de caracteres'**
+  String get totalCharacters;
+
+  /// No description provided for @itemDetails.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Detalhes dos itens'**
+  String get itemDetails;
+
+  /// No description provided for @characters.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'caracteres'**
+  String get characters;
+
+  /// No description provided for @letters.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Letras'**
+  String get letters;
+
+  /// No description provided for @numbers.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Números'**
+  String get numbers;
+
+  /// No description provided for @noDataToDisplay.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Sem dados para exibir'**
+  String get noDataToDisplay;
+
+  /// No description provided for @characterDistribution.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Distribuição de caracteres'**
+  String get characterDistribution;
 }
 
 class _AppLocalizationsDelegate
