@@ -33,9 +33,6 @@ migrate_working_dir/
 .pub/
 /build/
 
-
-*.md
-
 # Symbolication related
 app.*.symbols
 
