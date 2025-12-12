@@ -332,6 +332,96 @@ abstract class AppLocalizations {
   /// In pt_BR, this message translates to:
   /// **'Mínimo de {min} caracteres'**
   String requirementMinLength(int min);
+
+  /// No description provided for @noItemsYet.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Nenhum item ainda. \nAdicione novos itens para aparecer aqui!'**
+  String get noItemsYet;
+
+  /// No description provided for @newItem.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Novo item'**
+  String get newItem;
+
+  /// No description provided for @add.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Adicionar'**
+  String get add;
+
+  /// No description provided for @removeItem.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Remover item'**
+  String get removeItem;
+
+  /// No description provided for @removeItemConfirmation.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Deseja remover \"{itemName}\"?'**
+  String removeItemConfirmation(String itemName);
+
+  /// No description provided for @cancel.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Cancelar'**
+  String get cancel;
+
+  /// No description provided for @remove.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Remover'**
+  String get remove;
+
+  /// No description provided for @itemNameEmpty.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'O nome do item não pode estar vazio'**
+  String get itemNameEmpty;
+
+  /// No description provided for @edit.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Editar'**
+  String get edit;
+
+  /// No description provided for @delete.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Excluir'**
+  String get delete;
+
+  /// No description provided for @editItem.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Editar item'**
+  String get editItem;
+
+  /// No description provided for @itemName.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Nome do item'**
+  String get itemName;
+
+  /// No description provided for @itemDescription.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Descrição'**
+  String get itemDescription;
+
+  /// No description provided for @selectIcon.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Selecionar ícone'**
+  String get selectIcon;
+
+  /// No description provided for @save.
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Salvar'**
+  String get save;
 }
 
 class _AppLocalizationsDelegate

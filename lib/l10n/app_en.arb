@@ -66,5 +66,27 @@
         "type": "int"
       }
     }
-  }
+  },
+  "noItemsYet": "No items yet. \nAdd new items to appear here!",
+  "newItem": "New item",
+  "add": "Add",
+  "removeItem": "Remove item",
+  "removeItemConfirmation": "Do you want to remove \"{itemName}\"?",
+  "@removeItemConfirmation": {
+    "placeholders": {
+      "itemName": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "Cancel",
+  "remove": "Remove",
+  "itemNameEmpty": "Item name cannot be empty",
+  "edit": "Edit",
+  "delete": "Delete",
+  "editItem": "Edit item",
+  "itemName": "Item name",
+  "itemDescription": "Description",
+  "selectIcon": "Select icon",
+  "save": "Save"
 }
