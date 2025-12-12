@@ -13,12 +13,14 @@ class GridItem {
   final String name;
   final String description;
   final IconData icon;
+  final int editCount;
 
   GridItem({
     required this.id,
     required this.name,
     this.description = '',
     required this.icon,
+    this.editCount = 0,
   });
 
   GridItemModel toModel() {
@@ -27,6 +29,7 @@ class GridItem {
       name: name,
       description: description,
       iconCodePoint: icon.codePoint,
+      editCount: editCount,
     );
   }
 
@@ -36,6 +39,7 @@ class GridItem {
       name: model.name,
       description: model.description,
       icon: IconData(model.iconCodePoint, fontFamily: 'MaterialIcons'),
+      editCount: model.editCount,
     );
   }
 }
@@ -178,6 +182,7 @@ abstract class _HomeViewModel with Store {
         name: newName.trim(),
         description: newDescription ?? item.description,
         icon: newIcon ?? item.icon,
+        editCount: item.editCount + 1,
       );
       _saveItems();
     }

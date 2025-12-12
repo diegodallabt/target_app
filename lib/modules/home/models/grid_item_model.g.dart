@@ -21,13 +21,14 @@ class GridItemModelAdapter extends TypeAdapter<GridItemModel> {
       name: fields[1] as String,
       description: fields[2] as String,
       iconCodePoint: fields[3] as int,
+      editCount: fields[4] == null ? 0 : fields[4] as int,
     );
   }
 
   @override
   void write(BinaryWriter writer, GridItemModel obj) {
     writer
-      ..writeByte(4)
+      ..writeByte(5)
       ..writeByte(0)
       ..write(obj.id)
       ..writeByte(1)
@@ -35,7 +36,9 @@ class GridItemModelAdapter extends TypeAdapter<GridItemModel> {
       ..writeByte(2)
       ..write(obj.description)
       ..writeByte(3)
-      ..write(obj.iconCodePoint);
+      ..write(obj.iconCodePoint)
+      ..writeByte(4)
+      ..write(obj.editCount);
   }
 
   @override

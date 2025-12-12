@@ -16,11 +16,15 @@ class GridItemModel {
   @HiveField(3)
   final int iconCodePoint;
 
+  @HiveField(4, defaultValue: 0)
+  final int editCount;
+
   GridItemModel({
     required this.id,
     required this.name,
     required this.description,
     required this.iconCodePoint,
+    this.editCount = 0,
   });
 
   Map<String, dynamic> toJson() {
@@ -29,6 +33,7 @@ class GridItemModel {
       'name': name,
       'description': description,
       'iconCodePoint': iconCodePoint,
+      'editCount': editCount,
     };
   }
 
@@ -38,6 +43,7 @@ class GridItemModel {
       name: json['name'] as String,
       description: json['description'] as String,
       iconCodePoint: json['iconCodePoint'] as int,
+      editCount: json['editCount'] as int? ?? 0,
     );
   }
 }

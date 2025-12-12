@@ -181,4 +181,40 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get save => 'Save';
+
+  @override
+  String get details => 'Details';
+
+  @override
+  String get statistics => 'Statistics';
+
+  @override
+  String get gridColumns => 'Grid columns';
+
+  @override
+  String get totalRows => 'Total rows';
+
+  @override
+  String get editsPerformed => 'Edits performed';
+
+  @override
+  String get totalCharacters => 'Total characters';
+
+  @override
+  String get itemDetails => 'Item details';
+
+  @override
+  String get characters => 'characters';
+
+  @override
+  String get letters => 'Letters';
+
+  @override
+  String get numbers => 'Numbers';
+
+  @override
+  String get noDataToDisplay => 'No data to display';
+
+  @override
+  String get characterDistribution => 'Character distribution';
 }

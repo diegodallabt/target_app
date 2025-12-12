@@ -218,13 +218,6 @@ class _GridItemCardState extends State<GridItemCard>
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ActionButton(
-              icon: Icons.visibility,
-              color: Colors.blue,
-              size: actionIconSize,
-              onTap: _toggleView,
-            ),
-            const SizedBox(width: 6),
-            ActionButton(
               icon: Icons.edit,
               color: Colors.green,
               size: actionIconSize,
