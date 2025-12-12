@@ -8,6 +8,8 @@ import 'app_module.dart';
 import 'core/stores/theme/theme_store.dart';
 import 'core/stores/translate/locale_store.dart';
 import 'modules/login/models/user.dart';
+import 'modules/login/models/user_preferences.dart';
+import 'modules/home/models/grid_item_model.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,6 +17,8 @@ void main() async {
   await Hive.initFlutter();
   
   Hive.registerAdapter(UserAdapter());
+  Hive.registerAdapter(UserPreferencesAdapter());
+  Hive.registerAdapter(GridItemModelAdapter());
   
   runApp(
     ModularApp(

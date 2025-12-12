@@ -9,6 +9,7 @@ class AppConstants {
 
   static const String userBoxName = 'users';
   static const String authBoxName = 'auth';
+  static const String preferencesBoxName = 'preferences';
   static const String currentUserKey = 'currentUser';
   static const String tokenBoxKey = 'token';
 

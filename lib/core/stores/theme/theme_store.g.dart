@@ -33,26 +33,55 @@ mixin _$ThemeStore on _ThemeStore, Store {
     });
   }
 
+  late final _$errorMessageAtom =
+      Atom(name: '_ThemeStore.errorMessage', context: context);
+
+  @override
+  String? get errorMessage {
+    _$errorMessageAtom.reportRead();
+    return super.errorMessage;
+  }
+
+  @override
+  set errorMessage(String? value) {
+    _$errorMessageAtom.reportWrite(value, super.errorMessage, () {
+      super.errorMessage = value;
+    });
+  }
+
+  late final _$loadThemeAsyncAction =
+      AsyncAction('_ThemeStore.loadTheme', context: context);
+
+  @override
+  Future<void> loadTheme(String userId) {
+    return _$loadThemeAsyncAction.run(() => super.loadTheme(userId));
+  }
+
+  late final _$toggleThemeAsyncAction =
+      AsyncAction('_ThemeStore.toggleTheme', context: context);
+
+  @override
+  Future<void> toggleTheme() {
+    return _$toggleThemeAsyncAction.run(() => super.toggleTheme());
+  }
+
+  late final _$setThemeModeAsyncAction =
+      AsyncAction('_ThemeStore.setThemeMode', context: context);
+
+  @override
+  Future<void> setThemeMode(ThemeMode mode) {
+    return _$setThemeModeAsyncAction.run(() => super.setThemeMode(mode));
+  }
+
   late final _$_ThemeStoreActionController =
       ActionController(name: '_ThemeStore', context: context);
 
   @override
-  void toggleTheme() {
+  void resetToDefault() {
     final _$actionInfo = _$_ThemeStoreActionController.startAction(
-        name: '_ThemeStore.toggleTheme');
+        name: '_ThemeStore.resetToDefault');
     try {
-      return super.toggleTheme();
-    } finally {
-      _$_ThemeStoreActionController.endAction(_$actionInfo);
-    }
-  }
-
-  @override
-  void setThemeMode(ThemeMode mode) {
-    final _$actionInfo = _$_ThemeStoreActionController.startAction(
-        name: '_ThemeStore.setThemeMode');
-    try {
-      return super.setThemeMode(mode);
+      return super.resetToDefault();
     } finally {
       _$_ThemeStoreActionController.endAction(_$actionInfo);
     }
@@ -62,6 +91,7 @@ mixin _$ThemeStore on _ThemeStore, Store {
   String toString() {
     return '''
 themeMode: ${themeMode},
+errorMessage: ${errorMessage},
 isDarkMode: ${isDarkMode}
     ''';
   }
